@@ -11,14 +11,16 @@ exports.PIMPage =
       this.emplId="(//input[@class='oxd-input oxd-input--active'])[last()]";
       this.saveButton="[type='submit']";
       this.emplName = '.orangehrm-edit-employee-name h6'
-     
+      this.profileFileInput = 'input[type="file"]'
     }
 
     async clickOnAddEmployeeTab(){
       await this.clickOn(this.addEmployee);
     }
 
-    async addNewEmployee(fname,mname,lname,id){
+
+    async addNewEmployee(fname,mname,lname,id, filePath){
+      await this.page.locator(this.profileFileInput).setInputFiles(filePath);
       await this.enterText(this.firstName,fname);
       await this.enterText(this.middleName,mname);
       await this.enterText(this.lastName,lname);

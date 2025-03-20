@@ -1,19 +1,22 @@
 [ {
   "firstname"  : "Virat",
   "middlename" : "M",
-  "lastname"  : "Kohli"
+  "lastname"  : "Kohli",
+  "profilePicture" : "test data\\website.jpg"
  },
 
  {
   "firstname"  : "Rohit",
   "middlename" : "P",
-  "lastname"  : "Sharma"
+  "lastname"  : "Sharma",
+  "profilePicture" : "test data\\two-scarlet-macaws-High-60.jpg"
  },
 
  {
   "firstname"  : "Rahul",
   "middlename" : "K",
-  "lastname"  : "Verma"
+  "lastname"  : "Verma",
+  "profilePicture" : "test data\\559ef22720c652d59dd6079928fe25a0.jpg"
  }
 
 ]

@@ -37,7 +37,7 @@ test('Verify user able to create new employee successfully@smoke@regression', as
     for(const testdata of testdatas){
       await pimPage.clickOnAddEmployeeTab();
       emplId = await pimPage.getRandomNumberString();
-      await pimPage.addNewEmployee(testdata.firstname,testdata.middlename,testdata.lastname,emplId);
+      await pimPage.addNewEmployee(testdata.firstname,testdata.middlename,testdata.lastname,emplId,testdata.profilePicture);
       let emplName = await pimPage.getEmployeeName();
       console.log(">>>>"+emplName)
       expect(emplName).toBe(testdata.firstname + " " + testdata.lastname)
